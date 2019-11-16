@@ -1,5 +1,3 @@
-$bgColor: pink;
-
-body{
-	background-color: $bgColor;
-}
+#originalPlayer, #converted {display: none;}
+audio {display: block;}
+input, button, p {margin: 10px 0;}

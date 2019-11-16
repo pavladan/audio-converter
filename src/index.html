@@ -4,11 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Audion converter</title>
-		<link rel='stylesheet' href='style.css'>
+    <title>Audion converter</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div>
+      <input id="audioIn" type="file" />
+      <audio id="originalPlayer" controls>
+        <a href="http://whatbrowser.org/">
+          Browser error
+        </a>
+      </audio>
+    </div>
+    <button id="convertBt" disabled>
+      Convert
+    </button>
+    <div id="converted">
+      <p>Converted to <a id="convertedLink" download></a></p>
+      <audio id="convertedPlayer" controls></audio>
+    </div>
 
-		<script src="index.js"></script>
-	</body>
+    <script src="index.js"></script>
+  </body>
 </html>
